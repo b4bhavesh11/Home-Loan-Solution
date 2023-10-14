@@ -1,0 +1,25 @@
+/*Home Loan Login Page Setting*/
+form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 108%;
+    background-color: #0e0a0a;
+    color: #910808;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .Main-headng {
+    text-align-last: center;
+    text-decoration:sandybrown;
+    color: rgb(0, 0, 0);
+  }
+/*Customer Application Page Setting*/

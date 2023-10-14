@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<title> New Customer details</title>
+<link rel="stylesheet" href="stylecss-login-page.css">
+<div class="Hedding">
+<h1> New Customer Details </h1></div>
+<head>
+    <title>Sample Form</title>
+</head>
+<body>
+    <div class="Application Form Main">
+     <h1>Home Loan Application Details</h1></div>
+    <h2>Basic Details</h2>
+    <form action="submit.php" method="post">
+        <!-- Rapid No Input -->
+        <label for="RAPID No">Rapid No:</label>
+        <input type="number" placeholder="RAPID No" name="number" required>
+
+        <!-- Customer Name Input -->
+        <label for="Customer Name">Customer name:</label>
+        <input type="text" placeholder="Customer name" name="Customer Name" required>
+
+       <!-- Loan Amount  No Input -->
+       <label for="Loan Amount">Loan Amount:</label>
+       <input type="number" placeholder="Loan Amount" name="Loan Amount" required>
+   
+   <!-- Home Loan Product Selection  No Input -->
+        <label for="Product">Select Product:</label>
+        <select id="Product" name="Select">
+            <option value="" disabled selected>Select</option>
+            <option value="Home Loan Builder Purchase">Home Loan Builder Purchase</option>
+            <option value="Home Loan Plot +Construction">Home Loan Plot +Construction</option>
+            <option value="Home Loan Self Construction">Home Loan Self Construction</option>
+            <option value="Home Loan Balance Transfer">Home Loan Balance Transfer</option>
+            <option value="Home Loan Balance Transfer + Top Up">Home Loan Balance Transfer + Top Up</option>
+            <option value="Loan Against Property">Loan Against property (SORP)</option>
+            <option value="Loan Against Property">Loan Against property (SOCP)</option>
+            </select>
+  <!-- Customer  Property Address Name Input -->
+  <p> 
+  <label for="Property Address">Property Address:</label>
+  <textarea id="Property Address" name="Property Address" rows="4" cols="50"></textarea>
+</p>
+<!--Login details-->
+<h2>Login Details</h2>
+<label for="Date of Login"> Login Date</label>
+<input type="date" placeholder="Date" name="Date of login" required>
+<script>
+    const dateField = document.querySelector('#date-field');
+    const currentDate = new Date();
+    dateField.value = currentDate.toISOString().substring(0, 10);
+  </script>
+   <!--RCU Input-->
+<label for="RCU">RCU</label>
+<select id="RCU" name="Select">
+<option value="initited"> initited</option>
+<option value="Pending"> Pending</option>
+<option value="Not Rrquire"> Not required</option>
+<option value="" disabled selected>Select</option>
+</select>
+
+  <!--Legal details-->
+<label for="Legal Initiation"> Legal Initiation</label>
+<input type="date" placeholder="Date" name="Date of Initiate" required>
+<script>
+    const dateField = document.querySelector('#date-field');ss
+    const currentDate = new Date();
+    dateField.value = currentDate.toISOString().substring(0, 10);
+  </script>
+
+    <!--Technical details-->
+<label for="Technical Initiation"> Technical Initiation</label>
+<input type="date" placeholder="Date" name="Technical Initiate" required>
+<script>
+    const dateField = document.querySelector('#date-field');ss
+    const currentDate = new Date();
+    dateField.value = currentDate.toISOString().substring(0, 10);
+  </script>
+ 
+<!--Case Status Option-->
+<label for="Case status">Case Status</label>
+<select id="Case Status"> Name="Case Status">
+<option value="" disabled selected>Select</option>
+<option value="WIP">WIP</option>
+<option value="Approved">Approved</option>
+<option value="Reject">Reject</option>
+</select>
+<label for="sanction_amount">Sanction Amount (₹)</label>
+<input type="number" id="sanction_amount" name="sanction_amount" />
+<!--Login Details-->
+<!--sourcing Details-->
+<lebal for="RO Name">RO Name</lebal>
+<select name="RO Name">
+<option value="Kishor Nandanvar">Kishor Nandanvar</option>.
+<option value="Krunal Palsanawala">Krunal Palsanawala</option>
+</select>
+
+<lebal for="BM Name"> BM Name</lebal>
+<select name="BM Name"> 
+    <option value="Gautam Sheliya">Gautam Sheliya</option>
+    <option value="Anjesh Pande">Anjesh Pande</option>
+</select>
+
+
+<lebal for="Connector Name">Connector Name</lebal>
+<select name="Connectoe Name"> 
+    <option value="Self sourcing">Self Sourcing</option>
+    <option value="Harish">Harish Rathod</option>
+</select>
+<!--Disbursement Details-->
+<h2>Disbursement Status</h2>
+<lebal for="Disbursement status"> Disbursement Status</lebal>
+<select name="Disbursement Status"> 
+    <option value="Disburse">Gautam Sheliya</option>
+    <option value="Disbursement Pending">Anjesh Pande</option>
+</select>
+
+       
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
